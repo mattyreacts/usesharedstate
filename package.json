@@ -1,0 +1,57 @@
+{
+  "name": "usesharedstate",
+  "version": "1.0.0",
+  "description": "A React hook to share state values between components in the tree",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "jest --env=jsdom"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattyreacts/usesharedstate.git"
+  },
+  "keywords": [
+    "React",
+    "hook",
+    "shared",
+    "state",
+    "context"
+  ],
+  "author": "Mathew Crothers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattyreacts/usesharedstate/issues"
+  },
+  "homepage": "https://github.com/mattyreacts/usesharedstate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^18.3.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  }
+}
