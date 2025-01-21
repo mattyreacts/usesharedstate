@@ -1,5 +1,5 @@
 {
-  "name": "usesharedstate",
+  "name": "@mattyreacts/usesharedstate",
   "version": "1.0.0",
   "description": "A React hook to share state values between components in the tree",
   "main": "./dist/index.js",
@@ -11,12 +11,6 @@
   "scripts": {
     "build": "tsup",
     "test": "jest --env=jsdom"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",
-      "^.+\\.(js|jsx)$": "babel-jest"
-    }
   },
   "repository": {
     "type": "git",
@@ -52,6 +46,6 @@
     "typescript": "^5.6.3"
   },
   "peerDependencies": {
-    "react": "^18.3.1"
+    "react": "^18 || ^19"
   }
 }
